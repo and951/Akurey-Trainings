@@ -1,0 +1,105 @@
+/*!
+ * All Rights Reserved
+ * This software is proprietary information of
+ * Intelligent Sense
+ * Use is subject to license terms.
+ * Filename: main.css
+ */
+
+
+/*
+ * Author:      ajimenez@intelligentsense.com
+ * Date:        23/06/2017
+ * Description: Main css file for the Akurey Css Training.
+ */
+html{
+  background: -webkit-linear-gradient(right, rgba(241,241,241, 0.5), rgba(241,241,241, 1));
+  /*Safari 5.1-6*/
+  background: -o-linear-gradient(right, rgba(241,241,241, 0.5), rgba(241,241,241, 1));
+  /*Opera 11.1-12*/
+  background: -moz-linear-gradient(right, rgba(241,241,241, 0.5), rgba(241,241,241, 1));
+  /*Fx 3.6-15*/
+  background: linear-gradient(to right, rgba(241,241,241, 0.5), rgba(241,241,241, 1));
+  /*Standard*/
+  color: rgba(255, 255, 255, 1);
+}
+.boxGrid {
+  height: 70vh;
+}
+
+.box {
+  display: inline-block;
+  top: 0;
+  bottom: 0;
+  margin-bottom: auto;
+  text-align: center;
+  width: 20%;
+  height: 70vh;
+  margin-right: 5%;
+  margin-left: 8%;
+  margin-top: 5%;
+  vertical-align: top;
+}
+
+.box-facebook {
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(top, rgba(59, 89, 152, 0.5), rgba(59, 89, 152, 1));
+  /*Safari 5.1-6*/
+  background: -o-linear-gradient(top, rgba(59, 89, 152, 0.5), rgba(59, 89, 152, 1));
+  /*Opera 11.1-12*/
+  background: -moz-linear-gradient(top, rgba(59, 89, 152, 0.5), rgba(59, 89, 152, 1));
+  /*Fx 3.6-15*/
+  background: linear-gradient(to top, rgba(59, 89, 152, 0.5), rgba(59, 89, 152, 1));
+  /*Standard*/
+  color: rgba(255, 255, 255, 1);
+}
+
+.box-twitter {
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(top, rgba( 0, 172, 237, 0.5), rgba( 0, 172, 237, 1));
+  /*Safari 5.1-6*/
+  background: -o-linear-gradient(top, rgba( 0, 172, 237, 0.5), rgba( 0, 172, 237, 1));
+  /*Opera 11.1-12*/
+  background: -moz-linear-gradient(top, rgba( 0, 172, 237, 0.5), rgba( 0, 172, 237, 1));
+  /*Fx 3.6-15*/
+  background: linear-gradient(to top, rgba( 0, 172, 237, 0.5), rgba( 0, 172, 237, 1));
+  /*Standard*/
+  color: rgba(255, 255, 255, 1);
+}
+
+.box-instagram {
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(top, rgba( 155, 105, 84, 0.5), rgba( 155, 105, 84, 1));
+  /*Safari 5.1-6*/
+  background: -o-linear-gradient(top, rgba( 155, 105, 84, 0.5), rgba( 155, 105, 84, 1));
+  /*Opera 11.1-12*/
+  background: -moz-linear-gradient(top, rgba( 155, 105, 84, 0.5), rgba( 155, 105, 84, 1));
+  /*Fx 3.6-15*/
+  background: linear-gradient(to top, rgba( 155, 105, 84, 0.5), rgba( 155, 105, 84, 1));
+  /*Standard*/
+  color: rgba(255, 255, 255, 1);
+}
+
+
+.sprite {
+
+  background-image: url(../img/social-media-icons-css-sprite.png);
+  background-color: transparent;
+  background-repeat: no-repeat;
+  display: block;
+  margin-top: 100%;
+  margin-left: 40%;
+}
+
+.sprite-facebook:hover {
+
+  width: 51px;
+  height: 51px;
+  background-position: -60px -62px;
+}
+
+.sprite-facebook {
+  width: 51px;
+  height: 51px;
+  background-position: -60px -5px;
+}
