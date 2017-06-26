@@ -13,6 +13,21 @@
  * Description: Main css file for the Akurey Css Training.
  */
 
+
+/***
+  *       _____                           _
+  *      / ____|                         | |
+  *     | |  __  ___ _ __   ___ _ __ __ _| |
+  *     | | |_ |/ _ \ '_ \ / _ \ '__/ _` | |
+  *     | |__| |  __/ | | |  __/ | | (_| | |
+  *      \_____|\___|_| |_|\___|_|  \__,_|_|
+  *
+  *
+  */
+
+
+/* GENERAL ELEMENTS */
+
 html {
   background: -webkit-linear-gradient(right, rgba(241, 241, 241, 0.5), rgba(241, 241, 241, 1));
   /*Safari 5.1-6*/
@@ -30,19 +45,42 @@ html {
 }
 
 .box {
-  position:relative;
+  position: relative;
   display: inline-block;
   top: 0;
   bottom: 0;
   margin-bottom: auto;
   text-align: center;
-  width: 20%;
   height: 70vh;
-  margin-right: 5%;
-  margin-left: 8%;
-  margin-top: 5%;
   vertical-align: top;
 }
+
+.sprite {
+  background-image: url(../img/social-media-icons-css-sprite.png);
+  background-color: transparent;
+  background-repeat: no-repeat;
+  display: block;
+  position: absolute;
+  bottom: 5%;
+  margin-left: 40%;
+  width: 51px;
+  height: 51px;
+}
+
+
+/***
+ *      ______             _                 _
+ *     |  ____|           | |               | |
+ *     | |__ __ _  ___ ___| |__   ___   ___ | | __
+ *     |  __/ _` |/ __/ _ \ '_ \ / _ \ / _ \| |/ /
+ *     | | | (_| | (_|  __/ |_) | (_) | (_) |   <
+ *     |_|  \__,_|\___\___|_.__/ \___/ \___/|_|\_\
+ *
+ *
+ */
+
+
+/* FACEBOOK ELEMENTS */
 
 .box-facebook {
   /* For browsers that do not support gradients */
@@ -55,6 +93,51 @@ html {
   background: linear-gradient(to top, rgba(59, 89, 152, 0.5), rgba(59, 89, 152, 1));
   /*Standard*/
   color: rgba(255, 255, 255, 1);
+}
+
+.sprite-facebook:hover {
+  background-position: -60px -62px;
+}
+
+.sprite-facebook {
+  background-position: -60px -5px;
+}
+
+@media screen and (max-width: 35.5em){
+  .box-facebook {
+    /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(top, rgba(39, 120, 45, 0.3),  rgba(59, 89, 152, 0.5), rgba(59, 89, 152,1));
+    /*Safari 5.1-6*/
+    background: -o-linear-gradient(top, rgba(39, 120, 45, 0.3),  rgba(59, 89, 152, 0.5), rgba(59, 89, 152,1));
+    /*Opera 11.1-12*/
+    background: -moz-linear-gradient(top,  rgba(39, 120, 45, 0.3),  rgba(59, 89, 152, 0.5), rgba(59, 89, 152,1));
+    /*Fx 3.6-15*/
+    background: linear-gradient(to top,  rgba(39, 120, 45, 0.3),  rgba(59, 89, 152, 0.5), rgba(59, 89, 152,1));
+    /*Standard*/
+    color: rgba(255, 255, 255, 1);
+  }
+}
+
+/***
+ *      _______       _ _   _
+ *     |__   __|     (_) | | |
+ *        | |_      ___| |_| |_ ___ _ __
+ *        | \ \ /\ / / | __| __/ _ \ '__|
+ *        | |\ V  V /| | |_| ||  __/ |
+ *        |_| \_/\_/ |_|\__|\__\___|_|
+ *
+ *
+ */
+
+
+/* TWITTER ELEMENTS */
+
+.sprite-twitter:hover {
+  background-position: -4px -62px;
+}
+
+.sprite-twitter {
+  background-position: -3px -5px;
 }
 
 .box-twitter {
@@ -70,6 +153,44 @@ html {
   color: rgba(255, 255, 255, 1);
 }
 
+@media screen and (max-width: 35.5em){
+  .box-twitter {
+    /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(top, rgba(120,39,64,0.3),rgba( 0, 172, 237, 0.5), rgba( 0, 172, 237, 1));
+    /*Safari 5.1-6*/
+    background: -o-linear-gradient(top,  rgba(120,39,64,0.3),rgba( 0, 172, 237, 0.5), rgba( 0, 172, 237, 1));
+    /*Opera 11.1-12*/
+    background: -moz-linear-gradient(top,  rgba(120,39,64,0.3),rgba( 0, 172, 237, 0.5), rgba( 0, 172, 237, 1));
+    /*Fx 3.6-15*/
+    background: linear-gradient(to top,  rgba(120,39,64,0.3),rgba( 0, 172, 237, 0.5), rgba( 0, 172, 237, 1));
+    /*Standard*/
+    color: rgba(255, 255, 255, 1);
+  }
+}
+/***
+ *      _____           _
+ *     |_   _|         | |
+ *       | |  _ __  ___| |_ __ _  __ _ _ __ __ _ _ __ ___
+ *       | | | '_ \/ __| __/ _` |/ _` | '__/ _` | '_ ` _ \
+ *      _| |_| | | \__ \ || (_| | (_| | | | (_| | | | | | |
+ *     |_____|_| |_|___/\__\__,_|\__, |_|  \__,_|_| |_| |_|
+ *                                __/ |
+ *                               |___/
+ */
+
+
+/* INSTAGRAM ELEMENTS */
+
+
+
+.sprite-instagram:hover {
+  background-position: -117px -62px;
+}
+
+.sprite-instagram {
+  background-position: -118px -5px;
+}
+
 .box-instagram {
   /* For browsers that do not support gradients */
   background: -webkit-linear-gradient(top, rgba( 155, 105, 84, 0.5), rgba( 155, 105, 84, 1));
@@ -83,38 +204,17 @@ html {
   color: rgba(255, 255, 255, 1);
 }
 
-.sprite {
-  background-image: url(../img/social-media-icons-css-sprite.png);
-  background-color: transparent;
-  background-repeat: no-repeat;
-  display: block;
-  position: absolute;
-  bottom: 5%;
-  margin-left: 40%;
-  width: 51px;
-  height: 51px;
-}
-
-.sprite-facebook:hover {
-  background-position: -60px -62px;
-}
-
-.sprite-facebook {
-  background-position: -60px -5px;
-}
-
-.sprite-twitter:hover {
-  background-position: -4px -62px;
-}
-
-.sprite-twitter {
-  background-position: -3px -5px;
-}
-
-.sprite-instagram:hover {
-  background-position: -117px -62px;
-}
-
-.sprite-instagram {
-  background-position: -118px -5px;
+@media screen and (max-width: 35.5em){
+  .box-instagram {
+    /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(top, rgba( 120,39,64, 0.3),rgba( 155, 105, 84, 0.5), rgba( 155, 105, 84, 1));
+    /*Safari 5.1-6*/
+    background: -o-linear-gradient(top, rgba( 120,39,64, 0.3),rgba( 155, 105, 84, 0.5), rgba( 155, 105, 84, 1));
+    /*Opera 11.1-12*/
+    background: -moz-linear-gradient(top, rgba( 120,39,64, 0.3),rgba( 155, 105, 84, 0.5), rgba( 155, 105, 84, 1));
+    /*Fx 3.6-15*/
+    background: linear-gradient(to top, rgba( 120,39,64, 0.3),rgba( 155, 105, 84, 0.5), rgba( 155, 105, 84, 1));
+    /*Standard*/
+    color: rgba(255, 255, 255, 1);
+  }
 }
