@@ -12,22 +12,25 @@
  * Date:        23/06/2017
  * Description: Main css file for the Akurey Css Training.
  */
-html{
-  background: -webkit-linear-gradient(right, rgba(241,241,241, 0.5), rgba(241,241,241, 1));
+
+html {
+  background: -webkit-linear-gradient(right, rgba(241, 241, 241, 0.5), rgba(241, 241, 241, 1));
   /*Safari 5.1-6*/
-  background: -o-linear-gradient(right, rgba(241,241,241, 0.5), rgba(241,241,241, 1));
+  background: -o-linear-gradient(right, rgba(241, 241, 241, 0.5), rgba(241, 241, 241, 1));
   /*Opera 11.1-12*/
-  background: -moz-linear-gradient(right, rgba(241,241,241, 0.5), rgba(241,241,241, 1));
+  background: -moz-linear-gradient(right, rgba(241, 241, 241, 0.5), rgba(241, 241, 241, 1));
   /*Fx 3.6-15*/
-  background: linear-gradient(to right, rgba(241,241,241, 0.5), rgba(241,241,241, 1));
+  background: linear-gradient(to right, rgba(241, 241, 241, 0.5), rgba(241, 241, 241, 1));
   /*Standard*/
   color: rgba(255, 255, 255, 1);
 }
+
 .boxGrid {
   height: 70vh;
 }
 
 .box {
+  position:relative;
   display: inline-block;
   top: 0;
   bottom: 0;
@@ -80,26 +83,38 @@ html{
   color: rgba(255, 255, 255, 1);
 }
 
-
 .sprite {
-
   background-image: url(../img/social-media-icons-css-sprite.png);
   background-color: transparent;
   background-repeat: no-repeat;
   display: block;
-  margin-top: 100%;
+  position: absolute;
+  bottom: 5%;
   margin-left: 40%;
+  width: 51px;
+  height: 51px;
 }
 
 .sprite-facebook:hover {
-
-  width: 51px;
-  height: 51px;
   background-position: -60px -62px;
 }
 
 .sprite-facebook {
-  width: 51px;
-  height: 51px;
   background-position: -60px -5px;
+}
+
+.sprite-twitter:hover {
+  background-position: -4px -62px;
+}
+
+.sprite-twitter {
+  background-position: -3px -5px;
+}
+
+.sprite-instagram:hover {
+  background-position: -117px -62px;
+}
+
+.sprite-instagram {
+  background-position: -118px -5px;
 }
