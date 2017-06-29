@@ -1,0 +1,65 @@
+/***
+ *      _    _                _ _
+ *     | |  | |              | (_)
+ *     | |__| | ___  __ _  __| |_ _ __   __ _ ___
+ *     |  __  |/ _ \/ _` |/ _` | | '_ \ / _` / __|
+ *     | |  | |  __/ (_| | (_| | | | | | (_| \__ \
+ *     |_|  |_|\___|\__,_|\__,_|_|_| |_|\__, |___/
+ *                                       __/ |
+ *                                      |___/
+ */
+%textBasicProperties {
+  padding-bottom: 0.5em 1.2em;
+  text-decoration: none;
+  text-align: left;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+  font-family: 'Open Sans', sans-serif;
+  &.title{
+    font-weight: 400;
+    padding-bottom: 1.5%;
+  }
+
+}
+
+h1 {
+  font-size: 42px;
+  @extend %textBasicProperties;
+  color: $secondaryColor;
+}
+
+h2 {
+  font-size: 32px;
+  color: $mainColor;
+  @extend %textBasicProperties;
+
+}
+
+h3 {
+  color: $secondaryColor;
+  font-size: 22px;
+  @extend %textBasicProperties;
+}
+
+h4 {
+  color: $secondaryColor;
+  font-size: 12px;
+  @extend %textBasicProperties;
+}
+
+h5 {
+  color: $secondaryColor;
+  font-size: 7px;
+  @extend %textBasicProperties;
+}
+
+p {
+  padding-top: 3%;
+  padding-bottom: 3%;
+  color: $secondaryColor;
+  font-size: 18px;
+  @extend %textBasicProperties;
+}

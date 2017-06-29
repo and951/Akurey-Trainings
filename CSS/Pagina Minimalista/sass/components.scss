@@ -1,8 +1,128 @@
-$redColor : rgb(100,0,0);
+@import "variables";
+@import "headings";
 
-h1 {
-  .redH1{
-    color : rgb(100,0,0);
-    font-size: 100px;
+body {
+  background-color: $backgroundColor;
+
+  .container {
+    padding-bottom: 1.5%;
+    padding-top: 1.5%;
   }
+}
+
+header {
+  nav {
+    display: inline;
+    position: absolute;
+    width: 100%;
+    border-top: 1px solid $secondaryColor;
+    border-bottom: 1px solid $secondaryColor;
+
+    li {
+      @extend h3;
+      padding-right: 3%;
+      float: left;
+      padding-top: 1.5%;
+      padding-bottom: 1.5%;
+    }
+
+    a {
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}
+@media screen and (max-width: 35.5em) {
+  header {
+    nav {
+      padding-top: 5%;
+      padding-bottom: 5%;
+      display: block;
+      position:relative;
+      width: 100%;
+      border-top: none;
+      border-bottom: none;
+    }
+    li {
+      float: none;
+      padding-right: 3%;
+      padding-top: 1.5%;
+      padding-bottom: 1.5%;
+    }
+  }
+  div {
+    .container {
+      padding-top: 5%;
+      padding-bottom: 5%;
+    }
+
+    .containerUnderline {
+      border-bottom: 1px solid $secondaryColor;
+    }
+  }
+}
+
+span {
+  @extend h3;
+}
+
+a {
+  text-decoration: underline;
+  color: $secondaryColor;
+
+  &:hover {
+    color: $mainColor;
+  }
+}
+
+div {
+  .container {
+    padding-top: 5%;
+    padding-bottom: 1.5%;
+  }
+
+  .containerUnderline {
+    border-bottom: 1px solid $secondaryColor;
+  }
+}
+
+img {
+  padding-top: 2%;
+  padding-bottom: 2%;
+  border-radius: 1%;
+  border-color: $borderColor;
+  opacity: 1;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+.btn-dark {
+  opacity: 1;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  background-color: black;
+  border-color: black;
+
+  &:hover {
+    background-color: black;
+    opacity: 0.5;
+  }
+}
+
+blockquote {
+  @extend %textBasicProperties;
+  padding: 2%;
+  background-color: $backgroundDarkContrastColor;
+}
+
+footer {
+  background-color: black;
+  color: $borderColor;
 }
