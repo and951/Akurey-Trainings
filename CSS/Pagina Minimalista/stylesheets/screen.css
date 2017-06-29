@@ -4,7 +4,7 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 /* line 5, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+h1, h2, h3, header nav li, span, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
@@ -67,8 +67,202 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
+/***
+ *     __      __        _       _     _
+ *     \ \    / /       (_)     | |   | |
+ *      \ \  / /_ _ _ __ _  __ _| |__ | | ___  ___
+ *       \ \/ / _` | '__| |/ _` | '_ \| |/ _ \/ __|
+ *        \  / (_| | |  | | (_| | |_) | |  __/\__ \
+ *         \/ \__,_|_|  |_|\__,_|_.__/|_|\___||___/
+ *
+ *
+ */
+/***
+ *      _    _                _ _
+ *     | |  | |              | (_)
+ *     | |__| | ___  __ _  __| |_ _ __   __ _ ___
+ *     |  __  |/ _ \/ _` |/ _` | | '_ \ / _` / __|
+ *     | |  | |  __/ (_| | (_| | | | | | (_| \__ \
+ *     |_|  |_|\___|\__,_|\__,_|_|_| |_|\__, |___/
+ *                                       __/ |
+ *                                      |___/
+ */
+/* line 11, ../sass/headings.scss */
+h1, h2, h3, header nav li, span, h4, h5, p, blockquote {
+  padding-bottom: 0.5em 1.2em;
+  text-decoration: none;
+  text-align: left;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+  font-family: 'Open Sans', sans-serif;
+}
+/* line 21, ../sass/headings.scss */
+h1.title, h2.title, h3.title, header nav li.title, span.title, h4.title, h5.title, p.title, blockquote.title {
+  font-weight: 400;
+  padding-bottom: 1.5%;
+}
+
+/* line 28, ../sass/headings.scss */
+h1 {
+  font-size: 42px;
+  color: #575757;
+}
+
+/* line 34, ../sass/headings.scss */
+h2 {
+  font-size: 32px;
+  color: #CC3333;
+}
+
+/* line 41, ../sass/headings.scss */
+h3, header nav li, span {
+  color: #575757;
+  font-size: 22px;
+}
+
+/* line 47, ../sass/headings.scss */
+h4 {
+  color: #575757;
+  font-size: 12px;
+}
+
+/* line 53, ../sass/headings.scss */
+h5 {
+  color: #575757;
+  font-size: 7px;
+}
+
+/* line 59, ../sass/headings.scss */
+p {
+  padding-top: 3%;
+  padding-bottom: 3%;
+  color: #575757;
+  font-size: 18px;
+}
+
 /* line 4, ../sass/components.scss */
-h1 .redH1 {
-  color: #640000;
-  font-size: 100px;
+body {
+  background-color: #F2F2F2;
+}
+/* line 7, ../sass/components.scss */
+body .container {
+  padding-bottom: 1.5%;
+  padding-top: 1.5%;
+}
+
+/* line 14, ../sass/components.scss */
+header nav {
+  display: inline;
+  position: absolute;
+  width: 100%;
+  border-top: 1px solid #575757;
+  border-bottom: 1px solid #575757;
+}
+/* line 21, ../sass/components.scss */
+header nav li {
+  padding-right: 3%;
+  float: left;
+  padding-top: 1.5%;
+  padding-bottom: 1.5%;
+}
+/* line 29, ../sass/components.scss */
+header nav a {
+  text-decoration: none;
+}
+/* line 32, ../sass/components.scss */
+header nav a:hover {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 35.5em) {
+  /* line 40, ../sass/components.scss */
+  header nav {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    display: block;
+    position: relative;
+    width: 100%;
+    border-top: none;
+    border-bottom: none;
+  }
+  /* line 49, ../sass/components.scss */
+  header li {
+    float: none;
+    padding-right: 3%;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+  }
+
+  /* line 57, ../sass/components.scss */
+  div .container {
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+  /* line 62, ../sass/components.scss */
+  div .containerUnderline {
+    border-bottom: 1px solid #575757;
+  }
+}
+/* line 72, ../sass/components.scss */
+a {
+  text-decoration: underline;
+  color: #575757;
+}
+/* line 76, ../sass/components.scss */
+a:hover {
+  color: #CC3333;
+}
+
+/* line 82, ../sass/components.scss */
+div .container {
+  padding-top: 5%;
+  padding-bottom: 1.5%;
+}
+/* line 87, ../sass/components.scss */
+div .containerUnderline {
+  border-bottom: 1px solid #575757;
+}
+
+/* line 92, ../sass/components.scss */
+img {
+  padding-top: 2%;
+  padding-bottom: 2%;
+  border-radius: 1%;
+  border-color: #FFFFFF;
+  opacity: 1;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+/* line 101, ../sass/components.scss */
+img:hover {
+  opacity: 0.5;
+}
+
+/* line 106, ../sass/components.scss */
+.btn-dark {
+  opacity: 1;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  background-color: black;
+  border-color: black;
+}
+/* line 113, ../sass/components.scss */
+.btn-dark:hover {
+  background-color: black;
+  opacity: 0.5;
+}
+
+/* line 119, ../sass/components.scss */
+blockquote {
+  padding: 2%;
+  background-color: #C3C3C3;
+}
+
+/* line 125, ../sass/components.scss */
+footer {
+  background-color: black;
+  color: #FFFFFF;
 }
