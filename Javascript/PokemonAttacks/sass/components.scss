@@ -10,13 +10,14 @@
 }
 
 .boxGrid {
+  padding-top: 10%;
   height: 100%;
 }
 
 .box {
   background-color: rgba(255,255,255,0.5);
   height: 50%;
-  vertical-align: top;
+
 }
 .box-1{
   background-color: rgba(255,255,255,0.8);
@@ -27,7 +28,8 @@
 }
 
 .sprite {
-
+ border:0;
+ cursor: pointer;
   width: 25vh;
   height: 25vh;
 }

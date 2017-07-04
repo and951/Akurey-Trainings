@@ -90,28 +90,30 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 /* line 12, ../sass/components.scss */
 .boxGrid {
+  padding-top: 10%;
   height: 100%;
 }
 
-/* line 16, ../sass/components.scss */
+/* line 17, ../sass/components.scss */
 .box {
   background-color: rgba(255, 255, 255, 0.5);
   height: 50%;
-  vertical-align: top;
 }
 
-/* line 21, ../sass/components.scss */
+/* line 22, ../sass/components.scss */
 .box-1 {
   background-color: rgba(255, 255, 255, 0.8);
 }
 
-/* line 25, ../sass/components.scss */
+/* line 26, ../sass/components.scss */
 .pokemonForm {
   padding-top: 50%;
 }
 
-/* line 29, ../sass/components.scss */
+/* line 30, ../sass/components.scss */
 .sprite {
+  border: 0;
+  cursor: pointer;
   width: 25vh;
   height: 25vh;
 }
@@ -147,45 +149,53 @@ h1, h2, h3, h4, h5, p {
 /* line 29, ../sass/headings.scss */
 h1.title, h2.title, h3.title, h4.title, h5.title, p.title {
   font-weight: 400;
-  padding-bottom: 2.5%;
   padding-top: 2.5%;
   text-align: center;
+  color: #ffd733;
 }
-
-/* line 37, ../sass/headings.scss */
-h1 {
-  font-size: 42px;
-  color: #575757;
+/* line 36, ../sass/headings.scss */
+h1.redTitle, h2.redTitle, h3.redTitle, h4.redTitle, h5.redTitle, p.redTitle {
+  font-weight: 400;
+  text-align: center;
+  color: #ff1111;
 }
 
 /* line 43, ../sass/headings.scss */
-h2 {
-  font-size: 32px;
-  color: #CC3333;
+h1 {
+  font-size: 42px;
+  color: #444444;
 }
 
 /* line 49, ../sass/headings.scss */
+h2 {
+  font-size: 32px;
+  padding-bottom: 2.5%;
+  color: #444444;
+}
+
+/* line 56, ../sass/headings.scss */
 h3 {
-  color: #575757;
+  color: #444444;
+  padding-bottom: 2.5%;
   font-size: 22px;
 }
 
-/* line 55, ../sass/headings.scss */
+/* line 63, ../sass/headings.scss */
 h4 {
-  color: #575757;
+  color: #444444;
   font-size: 12px;
 }
 
-/* line 61, ../sass/headings.scss */
+/* line 69, ../sass/headings.scss */
 h5 {
-  color: #575757;
+  color: #444444;
   font-size: 7px;
 }
 
-/* line 67, ../sass/headings.scss */
+/* line 75, ../sass/headings.scss */
 p {
   padding-top: 3%;
   padding-bottom: 3%;
-  color: #575757;
+  color: #444444;
   font-size: 18px;
 }

@@ -33,95 +33,93 @@
 
 </head>
 
-<body>
+<body class="backgroundImage">
 
-  <h1 class="title"> Pokemon Stadium </h1>
-  <div class="main-container backgroundImage">
+  <h1 class="title"> Pokemon  </h1>
+  <h1 class="redTitle">Stadium </h1>
+  <div class="main-container ">
     <div class="boxGrid container ">
 
       <div class="box box-1 col-sm-12 col-md-6 col-lg-6">
+          <div class="col-sm-6 col-md-5 col-lg-5 ">
+
+            <form class="form-horizontal pokemonForm">
+              <h3 id="Pokemon1">Pokemon 1</h3>
+              <div class="form-group">
+                <h4 for="title" class="">Name</h4>
+                <div>
+                  <input class="form-control" type="text" name="Name" value="Charmander" id="nameP1" value="">
+                </div>
+              </div>
+              <div class="form-group">
+                <h4 for="title">Type</h4>
+                <div>
+                  <input class="form-control" name="type" value="Fire" id="typeP1" value="">
+                </div>
+              </div>
+              <div class="form-group">
+                <h4 for="title">Attack</h4>
+                <div>
+                  <input class="form-control" name="type" value="100" id="attackP1" value="">
+                </div>
+              </div>
+              <div class="form-group">
+                <h4 for="title">Defense</h4>
+                <div>
+                  <input class="form-control" name="type" value="50" id="defenseP1" value="">
+                </div>
+              </div>
+
+
+              <button type="button" class="btn" name="button" id="typeP1" onclick="createPokemon('P1')">Calcular Ataque</button>
+            </form>
+          </div>
+
+
+          <div class="form-horizontal col-sm-6 col-md-1 col-lg-1 pokemonForm">
+            <img src="" id="pokemonP1" class="sprite" alt="" onclick="attack('P1','P2')">
+          </div>
+      </div>
+
+      <div class="box col-sm-12 col-md-6 col-lg-6">
+        <div class="form-horizontal col-sm-6 col-md-6 col-lg-6 pokemonForm">
+          <img src="" id="pokemonP2" class="sprite" alt="" onclick="attack('P2','P1')">
+        </div>
         <div class="col-sm-6 col-md-5 col-lg-5 ">
-          <h3 class="title" id="Pokemon1">Pokemon 1</h3>
           <form class="form-horizontal pokemonForm">
+            <h3 id="Pokemon2">Pokemon 2</h3>
+            <div class="form-group">
+              <h4 for="title" class="">Name</h4>
+              <div>
+                <input class="form-control" type="text" name="Name" value="Squirtle" id="nameP2" value="">
+              </div>
+            </div>
+            <div class="form-group">
+              <h4 for="title">Type</h4>
+              <div>
+                <input class="form-control" name="type" value="Water" id="typeP2" value="">
+              </div>
+            </div>
+            <div class="form-group">
+              <h4 for="title">Attack</h4>
+              <div>
+                <input class="form-control" name="type" value="200" id="attackP2" value="">
+              </div>
+            </div>
+            <div class="form-group">
+              <h4 for="title">Defense</h4>
+              <div>
+                <input class="form-control" name="type" value="150" id="defenseP2" value="">
+              </div>
+            </div>
 
-            <div class="form-group">
-              <h4 for="title" class="col-sm-6 col-md-5 col-lg-5 control-h4">Name</h4>
-              <div class="col-xs-4">
-                <input class="form-control" type="text" name="Name" value="Charmander" id="nameP1" value="">
-              </div>
-            </div>
-            <div class="form-group">
-              <h4 for="title" class="col-sm-6 col-md-5 col-lg-5 control-h4">Type</h4>
-              <div class="col-xs-4">
-                <input class="form-control" name="type" value="Fire" id="typeP1" value="">
-              </div>
-            </div>
-            <div class="form-group">
-              <h4 for="title" class="col-sm-6 col-md-5 col-lg-5 control-h4">Attack</h4>
-              <div class="col-xs-4">
-                <input class="form-control" name="type" value="100" id="attackP1" value="">
-              </div>
-            </div>
-            <div class="form-group">
-              <h4 for="title" class="col-sm-6 col-md-5 col-lg-5 control-h4">Defense</h4>
-              <div class="col-xs-4">
-                <input class="form-control" name="type" value="50" id="defenseP1" value="">
-              </div>
-            </div>
 
-
-            <button type="button"  class="btn"  name="button" id="typeP1" clasonclick="createPokemon('P1')">Calcular Ataque</button>
+            <button type="button" class="btn" name="button" id="typeP2" onclick="createPokemon('P2')">Calcular Ataque</button>
           </form>
         </div>
-
-
-        <div class="form-horizontal col-sm-6 col-md-1 col-lg-1 pokemonForm">
-          <img src="" id="pokemon1" class="sprite" alt="">
-        </div>
-
-
       </div>
 
 
-
-      <div class="box box-instagram col-sm-12 col-md-6 col-lg-6 ">
-        <form class="form-horizontal">
-          <legend class="righter" id="Pokemon2">Pokemon 2</legend>
-          <div class="form-group">
-            <h4 for="title" class="col-sm-6 col-md-5 col-lg-5 control-h4">Name</h4>
-            <div class="col-xs-4">
-              <input class="form-control" type="text" name="Name" value="Charmander" id="nameP2" value="">
-            </div>
-          </div>
-          <div class="form-group">
-            <h4 for="title" class="col-sm-6 col-md-5 col-lg-5 control-h4">Type</h4>
-            <div class="col-xs-4">
-              <input class="form-control" name="type" value="Fire" id="typeP2" value="">
-            </div>
-          </div>
-          <div class="form-group">
-            <h4 for="title" class="col-sm-6 col-md-5 col-lg-5 control-h4">Attack</h4>
-            <div class="col-xs-4">
-              <input class="form-control" name="type" value="100" id="attackP2" value="">
-            </div>
-          </div>
-          <div class="form-group">
-            <h4 for="title" class="col-sm-6 col-md-5 col-lg-5 control-h4">Defense</h4>
-            <div class="col-xs-4">
-              <input class="form-control" name="type" value="50" id="defenseP2" value="">
-            </div>
-          </div>
-
-          <div class="col-sm-12 col-md-6 col-lg-6 ">
-            <button type="button" name="button" class="btn" id="typeP2" onclick="createPokemon('P2')">Calcular Ataque</button>
-
-          </div>
-        </form>
-
-
-
-        <a class="sprite sprite-facebook " href="" id="spriteP2"> </a>
-      </div>
     </div>
     <!-- #main -->
   </div>

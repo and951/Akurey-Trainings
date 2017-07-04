@@ -28,9 +28,15 @@
 
   &.title {
     font-weight: 400;
-    padding-bottom: 2.5%;
     padding-top: 2.5%;
     text-align: center;
+    color: $mainColor;
+  }
+
+  &.redTitle {
+    font-weight: 400;
+    text-align: center;
+    color: $redTitle;
   }
 }
 
@@ -42,12 +48,14 @@ h1 {
 
 h2 {
   font-size: 32px;
-  color: $mainColor;
+  padding-bottom: 2.5%;
+  color: $secondaryColor;
   @extend %textBasicProperties;
 }
 
 h3 {
   color: $secondaryColor;
+  padding-bottom: 2.5%;
   font-size: 22px;
   @extend %textBasicProperties;
 }
