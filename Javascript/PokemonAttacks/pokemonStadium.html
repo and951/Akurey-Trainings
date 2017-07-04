@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<!--
+    All Rights Reserved
+    This software is proprietary information of
+    Intelligent Sense
+    Use is subject to license terms.
+    Filename: index.html
+-->
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+
+<html class="no-js">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="" />
+
+  <meta name="viewport" content="width=device-width" />
+
+  <title></title>
+
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+
+  <link rel="stylesheet" href="./stylesheets/screen.css" />
+
+  <meta charset="utf-8">
+  <title>Pokemon Stadium</title>
+
+
+</head>
+
+<body>
+
+  <h1 class="title"> Pokemon Stadium </h1>
+  <div class="main-container backgroundImage">
+    <div class="boxGrid container ">
+
+      <div class="box box-1 col-sm-12 col-md-6 col-lg-6">
+        <div class="col-sm-6 col-md-5 col-lg-5 ">
+          <h3 class="title" id="Pokemon1">Pokemon 1</h3>
+          <form class="form-horizontal pokemonForm">
+
+            <div class="form-group">
+              <h4 for="title" class="col-sm-6 col-md-5 col-lg-5 control-h4">Name</h4>
+              <div class="col-xs-4">
+                <input class="form-control" type="text" name="Name" value="Charmander" id="nameP1" value="">
+              </div>
+            </div>
+            <div class="form-group">
+              <h4 for="title" class="col-sm-6 col-md-5 col-lg-5 control-h4">Type</h4>
+              <div class="col-xs-4">
+                <input class="form-control" name="type" value="Fire" id="typeP1" value="">
+              </div>
+            </div>
+            <div class="form-group">
+              <h4 for="title" class="col-sm-6 col-md-5 col-lg-5 control-h4">Attack</h4>
+              <div class="col-xs-4">
+                <input class="form-control" name="type" value="100" id="attackP1" value="">
+              </div>
+            </div>
+            <div class="form-group">
+              <h4 for="title" class="col-sm-6 col-md-5 col-lg-5 control-h4">Defense</h4>
+              <div class="col-xs-4">
+                <input class="form-control" name="type" value="50" id="defenseP1" value="">
+              </div>
+            </div>
+
+
+            <button type="button"  class="btn"  name="button" id="typeP1" clasonclick="createPokemon('P1')">Calcular Ataque</button>
+          </form>
+        </div>
+
+
+        <div class="form-horizontal col-sm-6 col-md-1 col-lg-1 pokemonForm">
+          <img src="" id="pokemon1" class="sprite" alt="">
+        </div>
+
+
+      </div>
+
+
+
+      <div class="box box-instagram col-sm-12 col-md-6 col-lg-6 ">
+        <form class="form-horizontal">
+          <legend class="righter" id="Pokemon2">Pokemon 2</legend>
+          <div class="form-group">
+            <h4 for="title" class="col-sm-6 col-md-5 col-lg-5 control-h4">Name</h4>
+            <div class="col-xs-4">
+              <input class="form-control" type="text" name="Name" value="Charmander" id="nameP2" value="">
+            </div>
+          </div>
+          <div class="form-group">
+            <h4 for="title" class="col-sm-6 col-md-5 col-lg-5 control-h4">Type</h4>
+            <div class="col-xs-4">
+              <input class="form-control" name="type" value="Fire" id="typeP2" value="">
+            </div>
+          </div>
+          <div class="form-group">
+            <h4 for="title" class="col-sm-6 col-md-5 col-lg-5 control-h4">Attack</h4>
+            <div class="col-xs-4">
+              <input class="form-control" name="type" value="100" id="attackP2" value="">
+            </div>
+          </div>
+          <div class="form-group">
+            <h4 for="title" class="col-sm-6 col-md-5 col-lg-5 control-h4">Defense</h4>
+            <div class="col-xs-4">
+              <input class="form-control" name="type" value="50" id="defenseP2" value="">
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-md-6 col-lg-6 ">
+            <button type="button" name="button" class="btn" id="typeP2" onclick="createPokemon('P2')">Calcular Ataque</button>
+
+          </div>
+        </form>
+
+
+
+        <a class="sprite sprite-facebook " href="" id="spriteP2"> </a>
+      </div>
+    </div>
+    <!-- #main -->
+  </div>
+</body>
+
+<script src="./js/pokemonTypeDistribution.js" charset="utf-8"></script>
+<script src="./js/pokemon.js" charset="utf-8"></script>
+<script src="./node_modules/jquery/dist/jquery.min.js" charset="utf-8"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="./js/attackCalculator.js" charset="utf-8"></script>
+
+
+</html>

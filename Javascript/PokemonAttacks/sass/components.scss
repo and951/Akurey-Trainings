@@ -1,0 +1,33 @@
+.backgroundImage {
+
+  background-image: url('../img/pokemonStadium.png');
+  /* Full height */
+  height: 100vh;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.boxGrid {
+  height: 100%;
+}
+
+.box {
+  background-color: rgba(255,255,255,0.5);
+  height: 50%;
+  vertical-align: top;
+}
+.box-1{
+  background-color: rgba(255,255,255,0.8);
+
+}
+.pokemonForm{
+  padding-top: 50%;
+}
+
+.sprite {
+
+  width: 25vh;
+  height: 25vh;
+}
