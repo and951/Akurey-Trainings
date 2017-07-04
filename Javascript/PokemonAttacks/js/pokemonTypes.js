@@ -1,4 +1,24 @@
-var pokemonType = class {
+
+/*!
+ * All Rights Reserved
+ * This software is proprietary information of
+ * Intelligent Sense
+ * Use is subject to license terms.
+ * Filename: pokemonTypes.js
+ */
+
+ /*
+  * Author:      ajimenez@intelligentsense.com
+  * Date:        03/07/2017
+  * Description: This file defines the pokemon types class and its relationships.
+  */
+
+
+/**
+ * Training
+ */
+
+var pokemonTypes = class {
   constructor() {
     this.POKEMON_TYPES = ["Fire", "Grass", "Water", "Electric"];
     this.NO_EFECTIVE_VALUE = 0.5;
@@ -7,7 +27,12 @@ var pokemonType = class {
     this.pokemonTypeEfecctivnes = {};
     this.generatePokemonTypeEfectivness();
   }
-
+  /**
+   * 'Private' method that is not meant to be used outside of the class.
+   * This method purpose is to genereate a relationship between all of the types and assign them an efectivness value.
+   * @return {void} it doesn't return anything.
+   * @private
+   */
   generatePokemonTypeEfectivness() {
     //FIRE
 
@@ -55,10 +80,14 @@ var pokemonType = class {
     this.pokemonTypeEfecctivnes[waterElectric] = this.SUPER_EFECTIVE_VALUE;
 
   }
+  /**
+   * Public method that is  meant to be used outside of the class.
+   * This method purpose is to return the a relationship between two types.
+   * @return {floar}  it return the efectivness value assign to the relationship between two types.
+   * @private
+   */
   getEfectivness(attackType, defenseType) {
     var attackMade = [attackType, defenseType];
-    console.log(this.pokemonTypeEfecctivnes[attackMade]);
-    console.log("AttackType " + attackType + "DefenseType " + defenseType);
     return this.pokemonTypeEfecctivnes[attackMade]
   }
 

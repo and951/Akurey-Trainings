@@ -1,5 +1,4 @@
 .backgroundImage {
-
   background-image: url('../img/pokemonStadium.png');
   /* Full height */
   height: 100vh;
@@ -17,19 +16,26 @@
 .box {
   background-color: rgba(255,255,255,0.5);
   height: 50%;
-
 }
-.box-1{
+
+.box-1 {
   background-color: rgba(255,255,255,0.8);
-
 }
-.pokemonForm{
+
+.pokemonForm {
   padding-top: 50%;
 }
 
 .sprite {
- border:0;
- cursor: pointer;
+  border: 0;
+  width: 25vh;
+  height: 25vh;
+  align-content: center;
+}
+
+.activeSprite {
+  border: 0;
+  cursor: pointer;
   width: 25vh;
   height: 25vh;
 }

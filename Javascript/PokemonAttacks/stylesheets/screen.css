@@ -88,30 +88,38 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   background-size: cover;
 }
 
-/* line 12, ../sass/components.scss */
+/* line 11, ../sass/components.scss */
 .boxGrid {
   padding-top: 10%;
   height: 100%;
 }
 
-/* line 17, ../sass/components.scss */
+/* line 16, ../sass/components.scss */
 .box {
   background-color: rgba(255, 255, 255, 0.5);
   height: 50%;
 }
 
-/* line 22, ../sass/components.scss */
+/* line 21, ../sass/components.scss */
 .box-1 {
   background-color: rgba(255, 255, 255, 0.8);
 }
 
-/* line 26, ../sass/components.scss */
+/* line 25, ../sass/components.scss */
 .pokemonForm {
   padding-top: 50%;
 }
 
-/* line 30, ../sass/components.scss */
+/* line 29, ../sass/components.scss */
 .sprite {
+  border: 0;
+  width: 25vh;
+  height: 25vh;
+  align-content: center;
+}
+
+/* line 36, ../sass/components.scss */
+.activeSprite {
   border: 0;
   cursor: pointer;
   width: 25vh;
