@@ -1,6 +1,6 @@
 # PokemonAttacks
 
-<img src="http://raw.githubusercontent.com/and951/Akurey-Trainings/master/Javascript/PokemonAttacks/img/readmeImages/AkureyPokemon.png" alt="" width="100" height="100">
+<img src="https://raw.githubusercontent.com/and951/Akurey-Trainings/master/Javascript/PokemonAttacks/img/readmeImages/AkureyPokemon.png" alt="" width="250" height="250">
 
 
 This part of the training is an extension of the first javascript training task. The intention of this addition is to integrate all of the other training concepts:
