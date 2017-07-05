@@ -1,7 +1,7 @@
 .backgroundImage {
   background-image: url('../img/pokemonStadium.png');
   /* Full height */
-  height: 100vh;
+  height: 100%;
   /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
@@ -9,7 +9,7 @@
 }
 
 .boxGrid {
-  padding-top: 10%;
+  padding-top: 5%;
   height: 100%;
 }
 
@@ -20,6 +20,7 @@
 
 .box-1 {
   background-color: rgba(255,255,255,0.8);
+  height: 50%;
 }
 
 .pokemonForm {

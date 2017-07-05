@@ -1,56 +1,49 @@
 # PokemonAttacks
 
-The best project ever.
+[![N|Solid]("https://raw.githubusercontent.com/and951/Akurey-Trainings/master/Javascript/PokemonAttacks/img/readmeImages/AkureyPokemon.png")
+This part of the training is an extension of the first javascript training task. The intention of this addition is to integrate all of the other training concepts:
 
-## Getting Started
-### On the server
-Install the module with: `npm install PokemonAttacks`
+- Clean Code
+- SASS/Compass
+- Javascript/jQuery
+- Grunt for concatenation and minification.
 
-```javascript
-var PokemonAttacks = require('PokemonAttacks');
-PokemonAttacks.awesome(); // "awesome"
-```
 
-### In the browser
-Download the [production version][min] or the [development version][max].
+## Javascript
 
-[min]: https://raw.github.com/and951/Akurey-Trainings/master/dist/PokemonAttacks.min.js
-[max]: https://raw.github.com/and951/Akurey-Trainings/master/dist/PokemonAttacks.js
+As this exercise is in the javascript module it makes some emphasis in the following concepts:
 
-In your web page:
+### Javascript clean code
 
-```html
-<script src="dist/PokemonAttacks.min.js"></script>
-<script>
-awesome(); // "awesome"
-</script>
-```
+[![N|Solid]("https://raw.githubusercontent.com/and951/Akurey-Trainings/master/Javascript/PokemonAttacks/img/readmeImages/cleanCodePractice.png")
 
-In your code, you can attach PokemonAttacks's methods to any object.
+### JQuery with html modifications  
 
-```html
-<script>
-var exports = Bocoup.utils;
-</script>
-<script src="dist/PokemonAttacks.min.js"></script>
-<script>
-Bocoup.utils.awesome(); // "awesome"
-</script>
-```
+[![N|Solid]("https://raw.githubusercontent.com/and951/Akurey-Trainings/master/Javascript/PokemonAttacks/img/readmeImages/jqueryWithModifications.png")
 
-## Documentation
-_(Coming soon)_
+### AJAX call to an API  
+
+[![N|Solid]("https://raw.githubusercontent.com/and951/Akurey-Trainings/master/Javascript/PokemonAttacks/img/readmeImages/ajaxCall.png")
+
+### Grunt for compilation and minification
+
+[![N|Solid]("https://raw.githubusercontent.com/and951/Akurey-Trainings/master/Javascript/PokemonAttacks/img/readmeImages/grunt.png")
+
 
 ## Examples
-_(Coming soon)_
 
-## Contributing
-In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).
+###Look and feel
 
-_Also, please don't edit files in the "dist" subdirectory as they are generated via Grunt. You'll find source code in the "lib" subdirectory!_
+Among all the javascript part it integrates the sass and compass concepts studied in the modules before this one.  Giving as a result a nice to look page.
 
-## Release History
-_(Nothing yet)_
+[![N|Solid]("https://raw.githubusercontent.com/and951/Akurey-Trainings/master/Javascript/PokemonAttacks/img/readmeImages/pageScreen.png")
+
+###Responsive design
+
+It also integrates bootstrap and its column distribuiton style giving a responsive design.
+
+[![N|Solid]("https://raw.githubusercontent.com/and951/Akurey-Trainings/master/Javascript/PokemonAttacks/img/readmeImages/responsiveDesign.png")
+
 
 ## License
 Copyright (c) 2017 and951  
